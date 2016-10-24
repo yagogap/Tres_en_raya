@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=ISO-8859-1">
+<title>Datos del Juego</title>
+<link rel='stylesheet' href='./css/tablero1.css' type='text/css'> 
+<script type='text/javascript' src='./js/tres_en_raya.js'></script>
+</head>
+<body>
+ <div id ='datos'>
+   <br /><hr /><br />
+   <h1 id='tit_datos'>Datos del juego</h1>
+   <br /><br />
+  <form name='datos_juego' id='datos_juego' action='#'>
+  <table>
+    <tr><td>Primer Jugador:</td><td><input type='text' value='Jugador 1' size=15 id="jug1" > </td></tr>
+    <tr><td>Segundo Jugador:</td><td><input type='text' value='Jugador 2' size=15 id="jug2" > </td></tr>
+    <tr><td>Tablero:</td><td><input type='radio' name='tablero' value='t1' id="t1" checked >Tipo 1</td></tr> 
+    <tr><td>&nbsp;</td><td><input type='radio' name='tablero' value='t2' id="t2" >Tipo 2 </td></tr> 
+    <tr><td>Tiempo Máximo:</td><td><input type='text' maxlength=3 size=3 id="n_tiempo" > </td></tr>   
+  </table>
+  <br /><br /><hr /><br />
+    <center>
+      <button type="button" id='boton' onclick='jugar()'>Jugar</button>          
+    </center>
+     <br /><hr />
+     <br /><br /><hr />
+  </form>
+</div> 
+ <div id='cabecera_juego'>
+   <br /><hr /><br /><h1 id='tit_juego'>Juego del Tres en Raya (drag&drop)</h1><br /><hr /><br />  
+ </div>
+ <div id='areajuego'></div>
+ <div id='capa_tapa'></div>
+</body>
+</html>
